@@ -271,7 +271,7 @@ const Footer = ({ colors = defaultValues }: FooterProps) => {
           </div>
         </section>
       </FooterStyled>
-      <Transition appear show={isOpen} onClose={closeModal}>
+      <Transition appear show={isOpen}>
 				<Dialog as="div" className="relative z-50" onClose={closeModal}>
 					<Transition.Child
 						enter="ease-out duration-300"

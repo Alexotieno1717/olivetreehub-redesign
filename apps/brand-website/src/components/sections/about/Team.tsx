@@ -8,7 +8,7 @@ interface ourTeamProps {
 
 function Team({ data }: ourTeamProps) {
   const members: MembersEntity[] | null = (data?.members || []) as MembersEntity[];
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

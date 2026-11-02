@@ -124,7 +124,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/home/alex/Pictures/olive/olivetreev3",
@@ -191,7 +191,7 @@
       <workItem from="1778156899980" duration="408000" />
       <workItem from="1793354381651" duration="7299000" />
       <workItem from="1793599501765" duration="5924000" />
-      <workItem from="1793609187314" duration="3737000" />
+      <workItem from="1793609187314" duration="4820000" />
     </task>
     <servers />
   </component>
