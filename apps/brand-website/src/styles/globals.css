@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-content {
+  padding-left: 43px;
+  background: url(/artwork/Line.svg) top left no-repeat;
+  background-size: 10px;
+}
+
+.sphere,
+.sphere-rotate {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, rgba(0, 174, 239, 0.05) 0%, #0d95bc 57.81%, #1480a8 100%);
+  filter: blur(30px);
+  animation: rotate 20s linear reverse infinite;
+}
+
+.sphere-variant,
+.sphere-variant-rotate {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, #63a684 0%, #2e5b46 57.81%, #0b301a 100%);
+  filter: blur(30px);
+  animation: rotate 20s linear reverse infinite;
+}
+
+.sphere-2,
+.sphere-rotate2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, #63a684 0%, #2e5b46 57.81%, #0b301a 100%);
+  filter: blur(35px);
+}
+
+.sphere-3,
+.sphere-rotate3 {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border-radius: 316.57px;
+  background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, rgba(0, 174, 239, 0.05) 0%, #0d95bc 57.81%, #1480a8 100%);
+}
+
+.sphere-3-variant,
+.sphere-rotate3-variant {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border-radius: 316.57px;
+  background: radial-gradient(91.18% 91.18% at 19.48% 21.03%, #2e5b46 0%, #67b48d 100%);
+}
+
+.sphere-4,
+.sphere-rotate4 {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, #63a684 0%, #2e5b46 57.81%, #0b301a 100%);
+  filter: blur(35px);
+  animation: rotate 20s linear reverse infinite;
+}
+
+.btn-shadow {
+  box-shadow: 0px 0.8164615035057068px 1.6329230070114136px 0px rgba(16, 24, 40, 0.05);
+}
+
+.bg-slider-card {
+  background: linear-gradient(137deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 12.081170082092285px 15.10146427154541px 24.16234016418457px 0px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(9.060876846313477px);
+}
+
+.ellipse-landing {
+  background: url(/artwork/Group1080.svg) center center no-repeat;
+  background-size: '100%';
+  mix-blend-mode: overlay;
+}
+
+.bg-control-btns {
+  border: 1px solid #f3f4f6;
+  background: rgba(255, 255, 255, 0.3);
+
+  /* Background blur/sm */
+  backdrop-filter: blur(4px);
+
+  top: 43%;
+}
+
+.container-custom {
+  @apply xl:max-w-[67.5rem];
+}
+
+.btn-outline-round {
+  @apply rounded-[50px] px-2 py-2 md:px-4 md:py-3;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#bannerImage {
+  background-color: rgba(15, 33, 27, 1);
+  height: auto;
+  position: relative;
+}
+
+#product-img {
+  transform: rotate(2.502deg);
+}
+
+.years-carousel {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.years-carousel:before {
+  content: '';
+  height: 1.5px;
+  width: 100%;
+  left: 0;
+  top: 6px;
+  position: absolute;
+  background: rgba(17, 220, 98, 0.14);
+}
+
+#intergrationImg {
+  /* background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, #73E24C 0%, #22AB46 57.81%, #0D6725 100%); */
+  filter: blur(35px);
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  flex-shrink: 0;
+  animation: rotate 20s linear reverse infinite;
+}
+#intergrationSphere2 {
+  /* background: radial-gradient(82.37% 82.37% at 17.53% 17.96%, #73E24C 0%, #22AB46 57.81%, #0D6725 100%); */
+  filter: blur(35px);
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  flex-shrink: 0;
+  animation: rotate 20s linear reverse infinite;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .journey-img {
+    margin-top: -41%;
+  }
+}
+
+/*
+:hover {
+  color: var(--hover-color);
+} */
+
+@keyframes carouselSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Team card fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.team-card:nth-child(1) { animation-delay: 0s; }
+.team-card:nth-child(2) { animation-delay: 0.1s; }
+.team-card:nth-child(3) { animation-delay: 0.2s; }
+.team-card:nth-child(4) { animation-delay: 0.3s; }
+.team-card:nth-child(5) { animation-delay: 0.4s; }
+.team-card:nth-child(6) { animation-delay: 0.5s; }
+.team-card:nth-child(7) { animation-delay: 0.6s; }
+.team-card:nth-child(8) { animation-delay: 0.7s; }
+
+/* Mobile menu slide animation */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(11, 48, 26, 0.98);
+  backdrop-filter: blur(8px);
+  z-index: 30;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+  overflow: hidden;
+}
+.mobile-menu-closed {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.mobile-menu-open {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (min-width: 1024px) {
+  .mobile-menu-none {
+    display: flex !important;
+  }
+  .mobile-menu {
+    position: relative;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* Dropdown panel smooth transitions */
+.dropdown-panel {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.25rem 0;
+}
+.dropdown-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.dropdown-closed {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}

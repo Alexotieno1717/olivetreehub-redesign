@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "@types/react-query": "^1.2.9",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.5.1",
+    "react-markdown": "^9.0.0",
+    "turbo": "^1.10.14"
+  },
+  "name": "olivetreev3",
+  "packageManager": "npm@9.6.7",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
+    ],
+    "packages/ui/*.{ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "typed.js": "^2.0.16"
+  },
+  "overrides": {
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7"
+  }
+}

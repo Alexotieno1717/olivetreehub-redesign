@@ -1,0 +1,15 @@
+services:
+  brand-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT:-3004}:3004'
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: '1'
+      PORT: '${PORT:-3004}'
+      HOSTNAME: '0.0.0.0'
+      CMS_URL: '${CMS_URL:-https://cms.olivetreehub.com}'
+      NEXT_PUBLIC_CMS_URL: '${NEXT_PUBLIC_CMS_URL:-https://cms.olivetreehub.com}'
+      CMS_TOKEN: '${CMS_TOKEN:-Bearer 578decf67c22e8c30b2ff03f40d150fae04d3d0e36f53e4f4f0df20c73964680976850e07e369dd83f4c6a83162b0a15d6307aff94fda6e823d47a6f1fe93a8e8bdea0e6d73f7ecc20f2858ca70abd556f383fb5aeee499eddd64ee8d7a859c332300ede2a32cf6e6c1e6c9a5b4578b675665abb677850bf39c6cecd59f557de}'

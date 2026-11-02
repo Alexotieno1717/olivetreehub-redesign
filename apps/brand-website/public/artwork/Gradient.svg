@@ -1,0 +1,15 @@
+<svg width="410" height="360" viewBox="0 0 410 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Gradient" filter="url(#filter0_f_2020_61177)">
+<path id="Segment" opacity="0.3" d="M-25.7036 83.1457C-25.7036 16.4232 28.3856 -37.666 95.1081 -37.666L95.1081 83.1457L-25.7036 83.1457Z" fill="#EE46BC"/>
+<path id="Segment_2" opacity="0.3" d="M95.1084 -37.666C161.831 -37.666 215.92 16.4232 215.92 83.1457L95.1084 83.1457L95.1084 -37.666Z" fill="#EF6820"/>
+<path id="Segment_3" opacity="0.3" d="M-25.7036 83.1465L95.1081 83.1465L95.1081 203.958C28.3856 203.958 -25.7036 149.869 -25.7036 83.1465Z" fill="#2E90FA"/>
+<path id="Segment_4" opacity="0.3" d="M95.1084 83.1445L215.92 83.1446C215.92 149.867 161.831 203.956 95.1084 203.956L95.1084 83.1445Z" fill="#12B76A"/>
+</g>
+<defs>
+<filter id="filter0_f_2020_61177" x="-219.002" y="-230.965" width="628.221" height="628.222" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="96.6494" result="effect1_foregroundBlur_2020_61177"/>
+</filter>
+</defs>
+</svg>

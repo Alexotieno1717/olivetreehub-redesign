@@ -1,0 +1,21 @@
+<svg width="423" height="386" viewBox="0 0 423 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:overlay" opacity="0.5">
+<circle cx="211.71" cy="212.306" r="210.104" transform="rotate(180 211.71 212.306)" fill="#F0FFDE" fill-opacity="0.16" stroke="url(#paint0_angular_2020_61199)" stroke-width="3.379"/>
+<circle cx="211.71" cy="212.306" r="180.592" transform="rotate(180 211.71 212.306)" fill="#F0FFDE" fill-opacity="0.16" stroke="url(#paint1_angular_2020_61199)" stroke-width="3.379"/>
+<circle cx="211.71" cy="212.306" r="143.268" transform="rotate(180 211.71 212.306)" fill="#F0FFDE" fill-opacity="0.16" stroke="url(#paint2_angular_2020_61199)" stroke-width="3.379"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_2020_61199" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211.71 212.306) rotate(90) scale(211.794)">
+<stop offset="0.317708" stop-color="white"/>
+<stop offset="0.59375" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_angular_2020_61199" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211.71 212.306) rotate(90) scale(182.282)">
+<stop offset="0.317708" stop-color="white"/>
+<stop offset="0.59375" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint2_angular_2020_61199" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(211.71 212.306) rotate(90) scale(144.957)">
+<stop offset="0.317708" stop-color="white"/>
+<stop offset="0.59375" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
