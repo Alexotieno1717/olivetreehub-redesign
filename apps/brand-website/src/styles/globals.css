@@ -252,3 +252,70 @@
   transform: translateY(-8px);
   pointer-events: none;
 }
+
+/* Single blog article fade-in animation */
+@keyframes articleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-articleFadeIn {
+  animation: articleFadeIn 0.5s ease-out forwards;
+}
+
+/* Reading progress bar smooth transition */
+.reading-progress-bar {
+  transition: width 0.15s ease-out;
+}
+
+/* Prose image styling for markdown content */
+.prose img {
+  border-radius: 1rem;
+  margin: 2rem 0;
+  transition: box-shadow 0.3s ease;
+}
+.prose img:hover {
+  box-shadow: 0 0 30px -8px rgba(98, 184, 78, 0.15);
+}
+
+/* Article prose custom scrollbar */
+.article-prose::-webkit-scrollbar {
+  width: 4px;
+}
+.article-prose::-webkit-scrollbar-track {
+  background: transparent;
+}
+.article-prose::-webkit-scrollbar-thumb {
+  background: rgba(98, 184, 78, 0.2);
+  border-radius: 2px;
+}
+
+/* Text selection styling */
+::selection {
+  background: rgba(98, 184, 78, 0.25);
+  color: #fff;
+}
+::-moz-selection {
+  background: rgba(98, 184, 78, 0.25);
+  color: #fff;
+}
+
+/* Custom scrollbar for the page */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B301A;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(98, 184, 78, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(98, 184, 78, 0.5);
+}

@@ -167,10 +167,17 @@ const Page = ({ articles }: { articles: Array<ArticleCMS> }) => {
 // It won't be called on client-side, so you can even do
 // direct database queries.
 export async function getServerSideProps() {
-  const response = await axios.get(`${CMS_URL}/api/blogs?sort=title:DESC&populate=deep,2`, {
+  const response = await axios.get(`${CMS_URL}/api/blogs?sort=publishedAt:DESC&populate=deep,2`, {
     headers: CMS_AUTH_HEADERS,
   });
-  const articles = await response.data.data;
+  let articles = await response.data.data;
+
+  // Ensure articles are sorted by latest publish date as a fallback
+  articles = articles.sort(
+    (a, b) =>
+      new Date(b.attributes.publishedAt).getTime() -
+      new Date(a.attributes.publishedAt).getTime()
+  );
 
   return {
     props: {
