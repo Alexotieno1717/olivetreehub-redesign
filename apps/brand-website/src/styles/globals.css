@@ -176,24 +176,28 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(28px) scale(0.97);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 .animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
-.team-card:nth-child(1) { animation-delay: 0s; }
+.team-card:nth-child(1) { animation-delay: 0.05s; }
 .team-card:nth-child(2) { animation-delay: 0.1s; }
-.team-card:nth-child(3) { animation-delay: 0.2s; }
-.team-card:nth-child(4) { animation-delay: 0.3s; }
-.team-card:nth-child(5) { animation-delay: 0.4s; }
-.team-card:nth-child(6) { animation-delay: 0.5s; }
-.team-card:nth-child(7) { animation-delay: 0.6s; }
-.team-card:nth-child(8) { animation-delay: 0.7s; }
+.team-card:nth-child(3) { animation-delay: 0.15s; }
+.team-card:nth-child(4) { animation-delay: 0.2s; }
+.team-card:nth-child(5) { animation-delay: 0.25s; }
+.team-card:nth-child(6) { animation-delay: 0.3s; }
+.team-card:nth-child(7) { animation-delay: 0.35s; }
+.team-card:nth-child(8) { animation-delay: 0.4s; }
+.team-card:nth-child(9) { animation-delay: 0.45s; }
+.team-card:nth-child(10) { animation-delay: 0.5s; }
+.team-card:nth-child(11) { animation-delay: 0.55s; }
+.team-card:nth-child(12) { animation-delay: 0.6s; }
 
 /* Mobile menu slide animation */
 .mobile-menu {

@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="300d28b4-a088-474b-86c5-8157ba52e187" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/brand-website/src/components/Navigation/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/brand-website/src/components/Navigation/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/brand-website/src/pages/about/blog/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/brand-website/src/pages/about/blog/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/brand-website/src/components/sections/about/Team.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/brand-website/src/components/sections/about/Team.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/brand-website/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/brand-website/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,23 +44,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000439366465" />
-      <entry key="MS500" value="1.0337726768434674" />
-      <entry key="S2" value="1.4381542109766972" />
-      <entry key="S5" value="1.8676670063131113" />
-      <entry key="S10" value="2.2379299497160448" />
-      <entry key="S30" value="2.6780532695350616" />
-      <entry key="S60" value="2.8293082319205354" />
-      <entry key="M2" value="3.0118946536427478" />
-      <entry key="M5" value="4.693671800198617" />
-      <entry key="M10" value="7.519410344508705" />
-      <entry key="M15" value="9.257174753065994" />
-      <entry key="M30" value="11.663663265908344" />
-      <entry key="H1" value="13.19566913544422" />
-      <entry key="H2" value="14.060924940989128" />
-      <entry key="H4" value="14.520849771760677" />
-      <entry key="D1" value="14.918772506827038" />
-      <entry key="W1" value="14.988362090016983" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000532707554" />
+      <entry key="S2" value="1.0216681288014064" />
+      <entry key="S5" value="1.348743263429406" />
+      <entry key="S10" value="1.9670516686408717" />
+      <entry key="S30" value="3.0246670175340995" />
+      <entry key="S60" value="3.4600699809471105" />
+      <entry key="M2" value="3.8084932004792993" />
+      <entry key="M5" value="5.564215678037222" />
+      <entry key="M10" value="8.41498890194238" />
+      <entry key="M15" value="10.171272737571254" />
+      <entry key="M30" value="12.609420615429086" />
+      <entry key="H1" value="14.16494970472145" />
+      <entry key="H2" value="15.04454853412793" />
+      <entry key="H4" value="15.512391273300755" />
+      <entry key="D1" value="15.91732377328178" />
+      <entry key="W1" value="15.988154154040572" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -83,23 +82,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.14063231182353625" />
-      <entry key="MS500" value="0.692025863482191" />
-      <entry key="S2" value="1.2722914455194954" />
-      <entry key="S5" value="1.763258361695952" />
-      <entry key="S10" value="2.166913671351167" />
-      <entry key="S30" value="2.646451392880683" />
-      <entry key="S60" value="2.8121095750390888" />
-      <entry key="M2" value="3.002471374161988" />
-      <entry key="M5" value="4.686788903365648" />
-      <entry key="M10" value="7.513307736320549" />
-      <entry key="M15" value="9.25200887765006" />
-      <entry key="M30" value="11.660318193196723" />
-      <entry key="H1" value="13.193753517678816" />
-      <entry key="H2" value="14.059898420788665" />
-      <entry key="H4" value="14.520318241255191" />
-      <entry key="D1" value="14.918681283081478" />
-      <entry key="W1" value="14.988348992204449" />
+      <entry key="MS100" value="4.1444289144891065E-37" />
+      <entry key="MS500" value="8.719082804418749E-8" />
+      <entry key="S2" value="0.03423576090801321" />
+      <entry key="S5" value="0.5159740657724523" />
+      <entry key="S10" value="1.3684830263388372" />
+      <entry key="S30" value="2.756797241560671" />
+      <entry key="S60" value="3.314611050090107" />
+      <entry key="M2" value="3.7321735758093713" />
+      <entry key="M5" value="5.529941626794454" />
+      <entry key="M10" value="8.395084121155453" />
+      <entry key="M15" value="10.156875292193176" />
+      <entry key="M30" value="12.601440531946247" />
+      <entry key="H1" value="14.160710553096504" />
+      <entry key="H2" value="15.04235853455343" />
+      <entry key="H4" value="15.511277545290108" />
+      <entry key="D1" value="15.91713545030197" />
+      <entry key="W1" value="15.988127183247677" />
     </decayedShown>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
@@ -112,33 +111,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "disable.download.node.interpreter.editor.notification": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/alex/Pictures/olive/olivetreev3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/home/alex/Documents/Olive Tree Projects/olivetreev3/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;disable.download.node.interpreter.editor.notification&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alex/Pictures/olive/olivetreev3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/alex/Documents/Olive Tree Projects/olivetreev3/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -192,6 +191,7 @@
       <workItem from="1793354381651" duration="7299000" />
       <workItem from="1793599501765" duration="5924000" />
       <workItem from="1793609187314" duration="27291000" />
+      <workItem from="1793773668137" duration="5693000" />
     </task>
     <servers />
   </component>
