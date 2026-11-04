@@ -34,7 +34,7 @@ function Team({ data }: ourTeamProps) {
   }, []);
 
   return (
-    <section className="relative max-w-[1120px] mx-auto py-20 px-6 md:py-28 xl:px-0">
+    <section className="relative lg:max-w-4xl xl:max-w-[1031px] mx-auto py-20 px-6 md:py-28 xl:px-0">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 -z-10 opacity-30">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#11DC62]/[0.03] rounded-full blur-3xl" />
@@ -66,18 +66,18 @@ function Team({ data }: ourTeamProps) {
         {members.map((item: MembersEntity) => (
           <div
             key={item.id}
-            className="team-card opacity-0 group"
+            className="team-card opacity-0 group h-full"
           >
             {/* Card wrapper */}
-            <div className="relative overflow-hidden rounded-2xl bg-white border border-gray-100/30 shadow-[0_1px_2px_rgba(0,0,0,0.03),0_4px_16px_rgba(0,0,0,0.04)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-3 group-hover:shadow-[0_12px_40px_rgba(0,121,63,0.1),0_2px_12px_rgba(0,0,0,0.04)] group-hover:border-[#11DC62]/15">
+            <div className="relative flex flex-col h-full overflow-hidden rounded-2xl bg-white border border-gray-100/30 shadow-[0_1px_2px_rgba(0,0,0,0.03),0_4px_16px_rgba(0,0,0,0.04)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-3 group-hover:shadow-[0_12px_40px_rgba(0,121,63,0.1),0_2px_12px_rgba(0,0,0,0.04)] group-hover:border-[#11DC62]/15">
               {/* Top gradient accent bar - visible on hover only */}
               <div
                 className="h-0 w-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:h-[3px]"
                 style={{ background: cardGradient }}
               />
 
-              {/* Image container */}
-              <div className="relative aspect-square overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100/20">
+              {/* Image container - fixed aspect ratio, same size for all cards */}
+              <div className="relative w-full aspect-square overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100/20 flex-shrink-0">
                 <img
                   src={cmsMediaUrl(item.image.data.attributes.url)}
                   alt={item.name}
@@ -92,16 +92,16 @@ function Team({ data }: ourTeamProps) {
               </div>
 
               {/* Info section */}
-              <div className="px-4 pt-4 pb-4 text-center">
+              <div className="flex flex-col flex-1 px-4 pt-4 pb-4 text-center">
                 <p
-                  className="text-base font-bold text-primary-light3 font-semibold leading-snug tracking-tight"
+                  className="text-sm font-bold text-[#0D652D] font-semibold leading-snug tracking-tight line-clamp-1"
                 >
                   {item.name}
                 </p>
                 {/* Gradient divider */}
                 <div className="mx-auto my-2 h-[2px] w-0 overflow-hidden rounded-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-10" style={{ background: cardGradient }} />
                 <p
-                  className="text-sm text-[#11DC62] font-sm leading-tight tracking-[0.18em]"
+                  className="text-[10px] text-[#11DC62] font-medium leading-tight uppercase tracking-[0.18em] line-clamp-2"
                 >
                   {item.title}
                 </p>
