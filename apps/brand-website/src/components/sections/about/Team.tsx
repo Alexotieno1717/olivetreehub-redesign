@@ -68,42 +68,40 @@ function Team({ data }: ourTeamProps) {
             key={item.id}
             className="team-card opacity-0 group"
           >
-            {/* Card wrapper with accent bar */}
-            <div className="relative overflow-hidden rounded-xl bg-white border border-gray-100/50 shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-2 group-hover:shadow-[0_16px_32px_rgba(0,121,63,0.12)] group-hover:border-[#11DC62]/25">
+            {/* Card wrapper */}
+            <div className="relative overflow-hidden rounded-2xl bg-white border border-gray-100/30 shadow-[0_1px_2px_rgba(0,0,0,0.03),0_4px_16px_rgba(0,0,0,0.04)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-3 group-hover:shadow-[0_12px_40px_rgba(0,121,63,0.1),0_2px_12px_rgba(0,0,0,0.04)] group-hover:border-[#11DC62]/15">
               {/* Top gradient accent bar - visible on hover only */}
               <div
-                className="h-0 w-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:h-[2.5px]"
+                className="h-0 w-full overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:h-[3px]"
                 style={{ background: cardGradient }}
               />
 
               {/* Image container */}
-              <div className="relative aspect-square overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100/30 rounded-t-xl">
+              <div className="relative aspect-square overflow-hidden bg-gradient-to-b from-gray-50 to-gray-100/20">
                 <img
                   src={cmsMediaUrl(item.image.data.attributes.url)}
                   alt={item.name}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105"
                 />
-                {/* Green overlay on hover - covers entire image including top corners */}
+                {/* Green gradient overlay on hover */}
                 <div
-                  className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 rounded-t-xl"
-                  style={{ background: `linear-gradient(to top, ${cardColor}60 0%, ${cardColor}25 40%, transparent 70%)` }}
+                  className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  style={{ background: `linear-gradient(to top, ${cardColor}50 0%, ${cardColor}20 40%, transparent 65%)` }}
                 />
               </div>
 
               {/* Info section */}
-              <div className="px-3.5 pt-3 pb-3.5 text-center">
+              <div className="px-4 pt-4 pb-4 text-center">
                 <p
-                  className="text-[13px] font-semibold leading-snug tracking-tight"
-                  style={{ color: '#0D652D' }}
+                  className="text-base font-bold text-primary-light3 font-semibold leading-snug tracking-tight"
                 >
                   {item.name}
                 </p>
                 {/* Gradient divider */}
-                <div className="mx-auto my-1.5 h-[1px] w-0 overflow-hidden rounded-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-6" style={{ background: cardGradient }} />
+                <div className="mx-auto my-2 h-[2px] w-0 overflow-hidden rounded-full transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:w-10" style={{ background: cardGradient }} />
                 <p
-                  className="text-[10px] font-medium leading-tight uppercase tracking-[0.16em]"
-                  style={{ color: '#11DC62' }}
+                  className="text-sm text-[#11DC62] font-sm leading-tight tracking-[0.18em]"
                 >
                   {item.title}
                 </p>
