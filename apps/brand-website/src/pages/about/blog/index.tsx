@@ -174,7 +174,7 @@ export async function getServerSideProps() {
 
   // Ensure articles are sorted by latest publish date as a fallback
   articles = articles.sort(
-    (a, b) =>
+    (a: ArticleCMS, b: ArticleCMS) =>
       new Date(b.attributes.publishedAt).getTime() -
       new Date(a.attributes.publishedAt).getTime()
   );

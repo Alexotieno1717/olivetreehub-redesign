@@ -463,7 +463,7 @@ const Page = ({ article, relatedArticles, articleIndex }: { article: ArticleCMS;
 };
 
 export async function getServerSideProps({ params }: { params: { slug: string } }) {
-  let article = null;
+  let article: ArticleCMS | null = null;
   let allArticles: ArticleCMS[] = [];
   try {
     const response = await fetch(`${CMS_URL}/api/blogs?filters[slug][$eq]=${encodeURIComponent(params.slug)}&populate=deep`, {
@@ -494,8 +494,9 @@ export async function getServerSideProps({ params }: { params: { slug: string } 
   }
 
   // Find related articles by category, excluding the current article
+  const currentId = article?.id ?? '';
   const relatedArticles = findArticlesWithSameTag(article, allArticles)
-    .filter((a) => a.id !== article.id)
+    .filter((a) => a.id !== currentId)
     .slice(0, 3);
 
   // Calculate article index based on published date (newest first)
@@ -504,7 +505,7 @@ export async function getServerSideProps({ params }: { params: { slug: string } 
     const dateB = new Date(b.attributes?.publishedAt || b.attributes?.createdAt || 0).getTime();
     return dateB - dateA;
   });
-  const articleIndex = sortedArticles.findIndex((a) => a.id === article.id) + 1 || 1;
+  const articleIndex = sortedArticles.findIndex((a) => a.id === currentId) + 1 || 1;
 
   return {
     props: {
